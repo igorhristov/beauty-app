@@ -1,14 +1,18 @@
 import React from 'react';
 import Header from './components/header/header.components';
 import Footer from './components/footer/footer.component';
+import Container from 'react-bootstrap/Container';
+
 import './App.css';
 
-function App() {
-    return <div className='App'>
-      <Header/>
-      <h2>Main</h2>
-      <Footer/>
-    </div>;
-}
+const App = () => {
+    return (
+        <>
+            <Header />
+            <h2>Main</h2>
+            <Footer />
+        </>
+    );
+};
 
 export default App;
