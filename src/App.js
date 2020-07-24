@@ -9,7 +9,7 @@ const App = () => {
     return (
         <>
             <Header />
-            <h2>Main</h2>
+            <h2 style={{"height": "100vh"}}>Main</h2>
             <Footer />
         </>
     );

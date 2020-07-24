@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebookSquare, faInstagram, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
-
+import { faLink, faCommentDots, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import './footer.styles.css';
 
 const Footer = () => (
@@ -10,18 +10,22 @@ const Footer = () => (
         <Container>
             <Row>
                 <div className='col-md-4 text-center'>
+                    <FontAwesomeIcon size='3x' className='footer-title' icon={faMapMarkerAlt} />
+
                     <h5>Get In Touch</h5>
 
                     <p>Струмица Македонија</p>
 
                     <p>
-                        <a href='mailto:contact@youremail.com'>info.rojal-beauty@gmail.com</a>
+                        <a href='mailto:contact@youremail.com'>info.ritual-beauty@gmail.com</a>
                     </p>
 
                     <p>078 253 253</p>
                 </div>
 
                 <div className='col-md-4 text-center'>
+                    <FontAwesomeIcon size='3x' className='footer-title' icon={faCommentDots} />
+
                     <h5>Social Media</h5>
 
                     <p>Каде можете да не најдете.</p>
@@ -52,20 +56,25 @@ const Footer = () => (
                 </div>
 
                 <div className='col-md-4 text-center'>
-                    <h5>Get In Touch</h5>
+                    <FontAwesomeIcon size='3x' className='footer-title' icon={faLink} />
+                    <h5>Useful Links</h5>
 
-                    <p>Струмица Македонија</p>
+                    <a href='#' className='footer-links'>
+                        Запознајте го тимот позади Rojal Beauty
+                    </a>
 
-                    <p>
-                        <a href='mailto:contact@youremail.com'>info.rojal-beauty@gmail.com</a>
-                    </p>
+                    <a href='#' className='footer-links'>
+                        Услуги
+                    </a>
 
-                    <p>078 253 253</p>
+                    <a href='#' className='footer-links'>
+                        Ценовници
+                    </a>
                 </div>
             </Row>
         </Container>
-        <div class='container-fluid footer-bottom px-0'>
-            <div class='row no-gutters mx-0'>
+        <Container fluid className='footer-bottom px-0'>
+            <Row noGutters className='mx-0'>
                 <div class='col-md-12 text-center'>
                     <p>
                         Copyright © 2020 <span class='template-name'>Rojal Beauty</span>. Made by{' '}
@@ -74,8 +83,8 @@ const Footer = () => (
                         </a>
                     </p>
                 </div>
-            </div>
-        </div>
+            </Row>
+        </Container>
     </footer>
 );
 
