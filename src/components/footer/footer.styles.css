@@ -63,22 +63,24 @@ ul.footer_social {
     max-width: 1140px;
     display: block;
     margin: 0 auto;
+    padding: 0;
     padding-top: 15px;
     text-align: center;
+
 }
 
 ul.footer_social li {
     display: inline-block;
     margin: 0;
-    line-height: 100% !important;
+    line-height: 100% ;
 }
 
 ul.footer_social li a .i {
     display: inline-block;
     margin: 0 8px;
     padding: 0;
-    font-size: 26px !important;
-    line-height: 26px !important;
+    font-size: 26px ;
+    line-height: 26px ;
     color: #1e90ff;
     transition: all 0.5s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -95,6 +97,10 @@ ul.footer_social a .fa-facebook {
 
 ul.footer_social li a .fa-instagram {
     color: #8a3ab9;
+}
+
+ul.footer_social li a .fa-youtube {
+    color: #FF0000;
 }
 
 ul.footer_social li a .i:hover {
@@ -115,7 +121,7 @@ p.contact-info a:hover {
     text-decoration: underline;
 }
 
-p.contact-info i {
+p.contact-info .i {
     font-size: 18px;
     padding-right: 5px;
     vertical-align: middle;
