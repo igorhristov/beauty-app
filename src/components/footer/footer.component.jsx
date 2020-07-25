@@ -3,6 +3,8 @@ import { Container, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebookSquare, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faLink, faCommentDots, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+
 import './footer.styles.css';
 
 const Footer = () => (
@@ -20,7 +22,9 @@ const Footer = () => (
                         <a href='mailto:contact@youremail.com'>info.ritual-beauty@gmail.com</a>
                     </p>
 
-                    <p>078 253 253</p>
+                    <p>
+                        <a href='tel:078253253'>078 253 253</a>
+                    </p>
                 </div>
 
                 <div className='col-md-4 text-center'>
@@ -32,23 +36,27 @@ const Footer = () => (
 
                     <ul className='footer_social'>
                         <li>
-                            <a href='#'>
+                            <a
+                                rel='noopener noreferrer'
+                                href='https://www.facebook.com/search/top?q=marija%20marja%20peeva'
+                                target='_blank'
+                            >
                                 <FontAwesomeIcon className='i fa-facebook' icon={faFacebookSquare} />
                             </a>
                         </li>
 
                         <li>
-                            <a href='#'>
+                            <a href='https://www.facebook.com/search/top?q=marija%20marja%20peeva'>
                                 <FontAwesomeIcon className='i fa-instagram' icon={faInstagram} />
                             </a>
                         </li>
                         <li>
-                            <a href='#'>
+                            <a href='https://www.facebook.com/search/top?q=marija%20marja%20peeva'>
                                 <FontAwesomeIcon className='i fa-twitter' icon={faTwitter} />
                             </a>
                         </li>
                         <li>
-                            <a href='#'>
+                            <a href='https://www.facebook.com/search/top?q=marija%20marja%20peeva'>
                                 <FontAwesomeIcon className='i fa-youtube' icon={faYoutube} />
                             </a>
                         </li>
@@ -59,17 +67,17 @@ const Footer = () => (
                     <FontAwesomeIcon size='3x' className='footer-title' icon={faLink} />
                     <h5>Useful Links</h5>
 
-                    <a href='#' className='footer-links'>
-                        Запознајте го тимот позади Rojal Beauty
-                    </a>
+                    <Link to='/contact-us' className='footer-links'>
+                        Тимот на Rojal Beauty
+                    </Link>
 
-                    <a href='#' className='footer-links'>
+                    <Link to='/contact-us' className='footer-links'>
                         Услуги
-                    </a>
+                    </Link>
 
-                    <a href='#' className='footer-links'>
+                    <Link to='/contact-us' className='footer-links'>
                         Ценовници
-                    </a>
+                    </Link>
                 </div>
             </Row>
         </Container>
@@ -78,7 +86,7 @@ const Footer = () => (
                 <div className='col-md-12 text-center'>
                     <p>
                         Copyright © 2020 <span className='template-name'>Rojal Beauty</span>. Made by{' '}
-                        <a href='https://google.com' target='_blank'>
+                        <a rel='noopener noreferrer' href='https://google.com' target='_blank'>
                             Igor Hristov
                         </a>
                     </p>
