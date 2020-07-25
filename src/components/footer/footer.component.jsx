@@ -68,7 +68,7 @@ const Footer = () => (
                     <h5>Useful Links</h5>
 
                     <Link to='/contact-us' className='footer-links'>
-                        Тимот на Rojal Beauty
+                        Тимот на Ritual Beauty
                     </Link>
 
                     <Link to='/contact-us' className='footer-links'>
