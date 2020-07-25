@@ -3,7 +3,8 @@
     overflow: hidden;
     display: block;
     padding-top: 80px;
-    background-color: #fafbfc;
+    background-color: #101010;
+    color: white;
 }
 
 .footer-top {
@@ -12,8 +13,8 @@
 
 .footer-bottom {
     padding: 40px 0 40px 0;
-    background-color: #fff;
-    border-top: 1px solid #efefef;
+    background-color: #1a1a1a;
+    border-top: 1px solid #1a1a1a;
 }
 
 .footer-top i {
@@ -25,7 +26,7 @@
 .footer p {
     margin-bottom: 5px;
     line-height: 24px;
-    color: #454545;
+    color: #727272;
 }
 
 .footer p > a {
@@ -53,7 +54,7 @@ a.footer-links {
     display: block;
     font-size: 17px;
     margin-bottom: 2px;
-    color: #454545;
+    color: #727272;
 }
 
 a.footer-links:hover {
