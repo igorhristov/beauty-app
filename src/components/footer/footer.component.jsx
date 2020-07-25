@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebookSquare, faInstagram, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faFacebookSquare, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faLink, faCommentDots, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import './footer.styles.css';
 
 const Footer = () => (
     <footer className='footer'>
-        <Container>
+        <Container className='footer-top'>
             <Row>
                 <div className='col-md-4 text-center'>
                     <FontAwesomeIcon size='3x' className='footer-title' icon={faMapMarkerAlt} />
@@ -49,7 +49,7 @@ const Footer = () => (
                         </li>
                         <li>
                             <a href='#'>
-                                <FontAwesomeIcon className='i fa-youtube' icon={faYoutubeSquare} />
+                                <FontAwesomeIcon className='i fa-youtube' icon={faYoutube} />
                             </a>
                         </li>
                     </ul>
@@ -75,9 +75,9 @@ const Footer = () => (
         </Container>
         <Container fluid className='footer-bottom px-0'>
             <Row noGutters className='mx-0'>
-                <div class='col-md-12 text-center'>
+                <div className='col-md-12 text-center'>
                     <p>
-                        Copyright © 2020 <span class='template-name'>Rojal Beauty</span>. Made by{' '}
+                        Copyright © 2020 <span className='template-name'>Rojal Beauty</span>. Made by{' '}
                         <a href='https://google.com' target='_blank'>
                             Igor Hristov
                         </a>
