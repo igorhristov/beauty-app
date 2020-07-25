@@ -32,12 +32,10 @@
 .footer p > a {
     font-size: 17px;
     color: #ec4090;
-    text-decoration: underline;
 }
 
 .footer p > a:hover {
     color: #ec4090;
-    text-decoration: underline;
 }
 
 span.template-name {
