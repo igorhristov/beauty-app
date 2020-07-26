@@ -14,9 +14,10 @@ const AboutPage = () => (
                     </h2>
                     <div>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque et, iste dignissimos labore
-                            dolorum repellat totam quaerat doloribus quos aperiam recusandae aspernatur quia aliquid,
-                            impedit necessitatibus iusto ex aut? Tempora!
+                            Znacajno e da se razbere deka RITUAL e nadvoresen izraz na vnatresno iskuseni vrednosti,
+                            veruvanja i stavovi. Bas za toa ritalite se znacajni za nas, tie pravat nevidlivite raboti
+                            odnosno vrednosti, veruvanja, i stavovi, koi se cesto zatskrieni da stanat konkretni i
+                            vidlivi.
                         </p>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia saepe quis reiciendis
