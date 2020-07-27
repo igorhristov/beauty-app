@@ -85,7 +85,7 @@ const Footer = () => (
             <Row noGutters className='mx-0'>
                 <div className='col-md-12 text-center'>
                     <p>
-                        Copyright © 2020 <span className='template-name'>Rojal Beauty</span>. Made by{' '}
+                        Copyright © 2020 <span className='template-name'>Ritual Beauty</span>. Made by{' '}
                         <a rel='noopener noreferrer' href='https://google.com' target='_blank'>
                             Igor Hristov
                         </a>
