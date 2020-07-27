@@ -1,8 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 import Home from './pages/home/home.component';
 import AboutUs from './pages/about/about.component';
 import ContactUs from './pages/contact/contact.component';
+import ServicesPage from './pages/services/services.component';
+
 import Header from './components/header/header.components';
 import Footer from './components/footer/footer.component';
 import ScrollToTop from './components/scrollToTop/scrollToTop.component';
@@ -18,6 +21,9 @@ const App = () => {
                 <Switch>
                     <Route exact path='/'>
                         <Home />
+                    </Route>
+                    <Route path='/services'>
+                        <ServicesPage />
                     </Route>
                     <Route path='/about-us'>
                         <AboutUs />
