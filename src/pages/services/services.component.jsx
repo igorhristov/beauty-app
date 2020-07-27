@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { CardDeck } from 'react-bootstrap';
 
 import data from '../../data/data';
 
@@ -16,7 +15,7 @@ const ServicesPage = () => {
             <div className='container'>
                 <div className='row'>
                     {services.map(({ id, imgUrl, body, title }) => (
-                        <div className='col-md-4 col-sm-6 d-flex align-items-stretch mb-4' key={id}>
+                        <div className='col-md-4 col-sm-6 d-flex align-items-stretch mb-5' key={id}>
                             <ServicesCard {...{ imgUrl, body, title }} />
                         </div>
                     ))}

@@ -5,6 +5,7 @@ import Home from './pages/home/home.component';
 import AboutUs from './pages/about/about.component';
 import ContactUs from './pages/contact/contact.component';
 import ServicesPage from './pages/services/services.component';
+import ServicePage from './pages/service/service.component';
 
 import Header from './components/header/header.components';
 import Footer from './components/footer/footer.component';
@@ -22,8 +23,11 @@ const App = () => {
                     <Route exact path='/'>
                         <Home />
                     </Route>
-                    <Route path='/services'>
+                    <Route exact path='/services'>
                         <ServicesPage />
+                    </Route>
+                    <Route  path='/services/:id'>
+                        <ServicePage />
                     </Route>
                     <Route path='/about-us'>
                         <AboutUs />
