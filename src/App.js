@@ -15,7 +15,6 @@ import './App.css';
 
 const App = () => {
     return (
-        <>
             <Router>
                 <ScrollToTop />
                 <Header />
@@ -38,8 +37,6 @@ const App = () => {
                 </Switch>
                 <Footer />
             </Router>
-            {/* <h2 style={{ height: '100vh' }}>Main</h2> */}
-        </>
     );
 };
 

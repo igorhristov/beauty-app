@@ -1,13 +1,17 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import CarouselComponent from '../../components/carousel/carousel.component';
+import ParallaxComponent from '../../components/parallax/parallax.component';
 
 const HomePage = () => (
-    <>
-        <CarouselComponent />
-        <div style={{ height: '100vh' }}>
-            <h1>Home Page</h1>
-        </div>
-    </>
+    <Container fluid className="p-0">
+        <Row>
+            <Col>
+                <CarouselComponent />
+                <ParallaxComponent />
+            </Col>
+        </Row>
+    </Container>
 );
 
 export default HomePage;
