@@ -25,7 +25,7 @@ const ServicePage = () => {
                             ))}
                         </div>
                         <div className='text-center pb-5'>
-                            <img src={require(`../../../assets/images/${myService.imgUrl}`)} />
+                            <img src={require(`../../assets/images/${myService.imgUrl}`)} />
                         </div>
                     </div>
                 </div>

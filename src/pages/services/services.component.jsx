@@ -7,7 +7,7 @@ import ServicesCard from '../../components/services-card/services-card';
 
 const ServicesPage = () => {
     const [services, setServices] = useState(data);
-    
+
     return (
         <>
             <InnerHeader title='Услуги' subtitle='Нашите Третмани' />
@@ -16,7 +16,7 @@ const ServicesPage = () => {
                 <div className='row'>
                     {services.map(({ id, imgUrl, body, title }) => (
                         <div className='col-md-4 col-sm-6 d-flex align-items-stretch mb-5' key={id}>
-                            <ServicesCard {...{ imgUrl, body, title }} />
+                            <ServicesCard {...{ id, imgUrl, body, title }} />
                         </div>
                     ))}
                 </div>
