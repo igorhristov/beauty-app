@@ -15,28 +15,28 @@ import './App.css';
 
 const App = () => {
     return (
-            <Router>
-                <ScrollToTop />
-                <Header />
-                <Switch>
-                    <Route exact path='/'>
-                        <Home />
-                    </Route>
-                    <Route exact path='/services'>
-                        <ServicesPage />
-                    </Route>
-                    <Route  path='/services/:id'>
-                        <ServicePage />
-                    </Route>
-                    <Route path='/about-us'>
-                        <AboutUs />
-                    </Route>
-                    <Route path='/contact-us'>
-                        <ContactUs />
-                    </Route>
-                </Switch>
-                <Footer />
-            </Router>
+        <Router>
+            <Header />
+            <Switch>
+                <Route exact path='/'>
+                    <Home />
+                </Route>
+                <Route exact path='/services'>
+                    <ServicesPage />
+                </Route>
+                <Route path='/services/:id'>
+                    <ServicePage />
+                </Route>
+                <Route path='/about-us'>
+                    <AboutUs />
+                </Route>
+                <Route path='/contact-us'>
+                    <ContactUs />
+                </Route>
+            </Switch>
+            <Footer />
+            <ScrollToTop />
+        </Router>
     );
 };
 

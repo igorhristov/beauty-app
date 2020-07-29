@@ -9,6 +9,10 @@
     transform: translateY(-50%);
 }
 
+.carousel-component .carousel-control-prev-icon {
+    /* background-image: url('https://previews.123rf.com/images/faysalfarhan/faysalfarhan1711/faysalfarhan171115356/89328930-back-arrow-icon-isolated-on-pink-round-button-abstract-illustration.jpg'); */
+}
+
 @media (max-width: 700px) {
     .carousel-component h3 {
         font-size: 25px;
