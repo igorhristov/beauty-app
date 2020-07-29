@@ -2,16 +2,16 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import CarouselComponent from '../../components/carousel/carousel.component';
 import ParallaxComponent from '../../components/parallax/parallax.component';
+import Testemonial from '../../components/testemonial/testemonial.component';
+import Services from '../../components/services-element/services.component';
 
 const HomePage = () => (
-    <Container fluid className="p-0">
-        <Row>
-            <Col>
-                <CarouselComponent />
-                <ParallaxComponent />
-            </Col>
-        </Row>
-    </Container>
+    <>
+        <CarouselComponent />
+        <Services />
+        <ParallaxComponent />
+        <Testemonial />
+    </>
 );
 
 export default HomePage;
